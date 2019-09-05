@@ -11,16 +11,16 @@ export const MenuLinksItem = styled.li`
     padding: .5rem 0;
 
     .active {
-        color: #1FA1F2;
+        color: var(--highlight);
     }
 `
 export const MenuLinksLink = styled(Link)`
-    color: #8899A6;
+    color: var(--texts);
     text-decoration: none;
     transition: color 0.5s;
 
     &:hover {
-        color: #1FA1F2;
+        color: var(--highlight);
     }
 `
 
