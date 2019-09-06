@@ -2,11 +2,13 @@ import React from 'react'
 import propTypes from 'prop-types'
 
 import * as S from './styled'
+import getThemeColor from '../../utils/getThemeColor'
+
 
 const PostItem = ({slug, background, category, date, timeToRead, title, description}) => {
 
     return (
-        <S.PostItemLink to={slug}>
+        <S.PostItemLink paintDrip duration={0.5} hex={getThemeColor()} to={slug}>
             <S.PostItemWrapper>
                 <S.PostItemTag background={background}> {category} </S.PostItemTag>
                 <S.PostItemInfo>

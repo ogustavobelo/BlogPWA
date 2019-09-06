@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react'
 import Icons from './Icons'
 import * as S from './styled'
 
+import getThemeColor from '../../utils/getThemeColor'
+
 const MenuBar = () => {
 
     const [theme, setTheme] = useState(null)
@@ -21,12 +23,12 @@ const MenuBar = () => {
     return (
         <S.MenuBarWrapper>
             <S.MenuBarGroup>
-                <S.MenuBarLink to="/" title="Voltar para Home">
+                <S.MenuBarLink paintDrip duration={0.5} hex={getThemeColor()} to="/" title="Voltar para Home">
                     <S.MenuBarItem>
                         <Icons.Home />
                     </S.MenuBarItem>
                 </S.MenuBarLink>
-                <S.MenuBarLink to="/search/" title="Pesquisar">
+                <S.MenuBarLink paintDrip duration={0.5} hex={getThemeColor()} to="/search/" title="Pesquisar">
                     <S.MenuBarItem>
                         <Icons.Search />
                     </S.MenuBarItem>
@@ -38,7 +40,7 @@ const MenuBar = () => {
                         window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
                     }}
                     className={theme} >
-                    <Icons.Light size="25" />
+                    <Icons.Light />
                 </S.MenuBarItem>
                 <S.MenuBarItem
                     title="Mudar visualização"

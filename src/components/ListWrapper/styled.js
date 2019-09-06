@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ListWrapper = styled.section`
+
     body#grid & {
         background-color: var(--borders);
         border-bottom: 1px solid var(--borders);

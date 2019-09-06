@@ -8,8 +8,10 @@ module.exports = {
     position: `Frontend Developer`,
     description: `A blog about frontend development and other geek stuff.`,
     author: `@ogustavobelo`,
+    siteUrl: 'https://projetofluxo.com.br/',
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // esse plugin precisa ser o primeiro para funcionar com o gatsby-remark-images
@@ -73,14 +75,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Projeto Fluxo Blog`,
+        short_name: `Fluxo`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#16202C`,
+        theme_color: `#16202C`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`
   ],
 }
