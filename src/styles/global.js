@@ -63,19 +63,19 @@ const GlobalStyles = createGlobalStyle`
         --borders: #38444D;
         --texts: #8899A6;
         --postColor: var(--white);
-        --highlight: #1FA1F2;
-        --mediumBackground: #192734;
-        --background: #16202C;
+        --highlight: #50fa7b;
+        --mediumBackground: #080b08;
+        --background: #151515;
         --white: #FFF;
         --black: #222;
     }
     body.light {
         --borders: #DEDEDE;
-        --texts: #111;
+        --texts: #408042;
         --postColor: #555;
-        --highlight: #1FA1F2;
-        --mediumBackground: #F0F0F3;
-        --background: var(--white);
+        --highlight: #52ff7e;
+        --mediumBackground: #c3d5c4;
+        --background: #F0F0F3;
         --white: #FFF;
         --black: #222;
     }

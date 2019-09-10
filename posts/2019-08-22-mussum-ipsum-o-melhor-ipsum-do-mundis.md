@@ -5,6 +5,7 @@ date: '2019-08-22 08:51:23'
 thumbnail: /assets/img/mussum-ipsum.jpg
 category: jekyll
 background: '#B31917'
+author: ogustavobelo
 ---
 ## Mussum Ipsum o melhor ipsum do mundis
 

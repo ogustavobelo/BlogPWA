@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from 'styled-media-query'
 
 export const SearchWrapper = styled.section`
   background: var(--background);
@@ -11,6 +12,7 @@ export const SearchWrapper = styled.section`
     flex-direction: column;
     height: auto;
     width: 100%;
+    
   }
   .ais-SearchBox,
   .ais-Stats {
@@ -25,14 +27,19 @@ export const SearchWrapper = styled.section`
 
   body#grid & {
     .ais-Hits-list {
-      background-color: var(--borders);
-      border-bottom: 1px solid var(--borders);
-      border-top: 1px solid var(--borders);
+      background-color: var(--background);
       display: grid;
       grid-area: posts;
       grid-gap: 1px;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       margin-top: 2rem ;
+      max-height: 500px;
+
+      .ais-Hits-item {
+       background-color: var(--background);
+       /* margin: rem; */
+       border: 1px solid var(--borders);
+      }
 
     }
   }

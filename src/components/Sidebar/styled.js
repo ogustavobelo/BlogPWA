@@ -19,7 +19,7 @@ export const SidebarWrapper = styled.aside`
         width: 100%;
         padding: 1rem 2rem;
 		flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
     `}
 
 `

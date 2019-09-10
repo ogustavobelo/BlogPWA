@@ -3,17 +3,23 @@ import media from 'styled-media-query'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const PostItemLink = styled(AniLink)`
+    box-sizing: border-box;
     color: var(--texts);
     display: flex;
     text-decoration: none;
+    /* font-family: "Roboto"; */
+    /* margin: 1px; */
+    transition: all 0.5s;
+    border: 1px solid var(--background);
 
  
     body#grid & {
-        background-color: var(--background)
+        background-color: var(--background);
     }
 
     &:hover {
         color: var(--highlight);
+        border: 1px solid var(--highlight);
     }
 `
 export const PostItemWrapper = styled.section`

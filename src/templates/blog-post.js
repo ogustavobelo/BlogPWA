@@ -25,6 +25,7 @@ const BlogPost = ({ data, pageContext }) => {
                 </S.PostDate>
                 <S.PostTitle>
                     {post.frontmatter.title}
+                    {post.frontmatter.author}
                 </S.PostTitle>
                 <S.PostDescription>
                     {post.frontmatter.description}
@@ -52,6 +53,7 @@ export const query = graphql`
             slug
         }
       frontmatter {
+        author
         title
         description
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
