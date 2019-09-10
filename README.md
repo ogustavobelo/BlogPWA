@@ -1,4 +1,4 @@
-# Personal Blog
+# Personal Blog - [Fluxo.dev](https://fluxodev.netlify.com/)
 
 ### This project uses Gatsby (React), GraphQL, Styled Components, Algolia Instant Search and Netlify CMS.
 
